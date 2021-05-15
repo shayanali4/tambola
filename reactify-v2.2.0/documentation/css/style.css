@@ -1,0 +1,416 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700,900);
+
+body {
+    background: #fff;
+    color: #354052;
+    font-size: 16px;
+    line-height: 31px;
+    letter-spacing: 0;
+    font-weight: 400;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0px;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    font-weight: normal;
+    line-height: 1.8;
+    color: #273142;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    text-decoration: none !important;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0;
+    margin-top: 15px;
+}
+
+img.aligncenter {
+    display: block;
+    text-align: center;
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 0px;
+    border: 0px;
+    background: none;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ol li ul li {
+    padding-left: 20px;
+}
+
+img.alignleft {
+    float: left;
+    margin: 6px 20px 6px 0;
+    display: inline;
+    border: 0px;
+    background: none;
+    padding: 0;
+    display: block;
+}
+ul.doc-list li, ol.doc-list li {
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+ul.doc-list li {
+    list-style: disc inside;
+}
+
+img.alignright {
+    padding: 0;
+    float: right;
+    margin: 6px 0 6px 20px;
+    border: 0px;
+    display: block;
+    background: none;
+}
+code {
+    color: #F85359;
+    font-size: 110%;
+}
+strong {
+    font-weight: 600;
+    font-size: 18px;
+    color: #354052;
+}
+blockquote {
+    font-size: 16px;
+    line-height: 32px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    position: relative;
+    width: auto;
+}
+
+blockquote small {
+    display: block;
+    margin-top: 20px;
+}
+
+pre {
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+
+.btn,
+a {
+    outline: 0 !important;
+    text-decoration: none !important;
+    color: #5C6AC4;
+}
+
+ins {
+    text-decoration: none;
+}
+
+sup {
+    bottom: 1ex;
+}
+
+sub {
+    top: .5ex;
+}
+
+.check li:before {
+    content: "\f00c";
+    font-family: "FontAwesome";
+    font-size: 16px;
+    left: 0;
+    color: #242424;
+    padding-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.check li {
+    font-size: 16px;
+    list-style: none;
+    margin-bottom: 4px;
+}
+
+.check {
+    margin-left: 0;
+    padding-left: 0
+}
+
+.section {
+   padding:90px 0 10px;
+    position: relative;
+    display: block;
+}
+
+.white {
+    background-color: #ffffff;
+}
+
+strong {
+    color: #030303;
+}
+
+.grey {
+    background-color: #f3f3f3;
+}
+
+.big-title h1 {
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    padding-bottom: 0;
+}
+
+.dark-text {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 400;
+    border-color: #5D92F4;
+    color: #5D92F4;
+}
+
+h4 a {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.dark-text a {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.dark-text hr {
+    width: 130px;
+    margin-left: 0;
+    margin-top: 15px;
+    border-width: 1px;
+    border-color: #5D92F4;
+    margin-bottom:5px;
+}
+
+.intro {
+    padding: 20px;
+}
+
+.intro1 {
+    margin-top: 22px;
+    padding: 30px 0px;
+    background-color: #f3f3f3;
+}
+
+.intro1 li {
+    list-style: none;
+}
+
+.intro1 a {
+    color: #5D92F4 !important;
+}
+
+.intro a {
+    color: #030303;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.lead {
+    text-transform: capitalize;
+}
+
+.left-align img {
+    margin-top: 20px;
+}
+
+.drop-caps p:first-child::first-letter {
+    color: #030303;
+    display: block;
+    float: left;
+    font-size: 75px;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 4px;
+}
+
+.drop-caps.full p:first-child::first-letter {
+    background: #030303 none repeat scroll 0 0 !important;
+    color: #ffffff;
+    margin-right: 15px;
+    padding: 20px;
+    font-size: 36px;
+    font-family: Georgia;
+    border-radius: 5px;
+}
+
+mark {
+    background-color: #5D92F4;
+    color: #ffffff;
+    padding: 0 10px;
+}
+
+a:focus,
+a:hover {
+    color: #5D92F4;
+}
+
+.intro2 i {
+    padding-right: 10px;
+    font-size: 21px;
+}
+
+.intro2 {
+    background-color: #5D92F4;
+    border: 2px solid #2187BB;
+    border-radius: 5px;
+    color: #ffffff;
+    font-style: italic;
+    padding: 10px 20px;
+}
+
+.intro2 p {
+    padding: 0;
+}
+
+.intro2 a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.intro1 ul {
+    padding: 0 30px;
+}
+
+.btn-primary {
+    background-color: #5D92F4;
+    border: 1px solid #2187BB;
+}
+
+.btn-primary:hover {
+    background-color: #2187BB;
+    border: 1px solid #5D92F4;
+}
+
+.btn-info {
+    background-color: #545454;
+    border: 1px solid #656565;
+}
+
+.btn-info:hover {
+    background-color: #656565;
+    border: 1px solid #545454;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #5D92F4;
+    color: #fff;
+}
+
+.navbar-inverse {
+    background-color: #030303;
+    border: 0;
+}
+
+.navbar-inverse li.btn {
+    border-radius: 0 !important;
+    padding: 0;
+}
+
+.navbar-inverse li.btn a {
+    color: #ffffff !important;
+}
+
+.doc-heading {
+    background: #5D92F4;
+    padding: 20px 0;
+	 position:fixed;
+	 top:0;
+	 left:0;
+	 width:100%;
+	 z-index:1;
+}
+html {
+	margin-top:72px;
+}
+.contact-link,.contact-link:hover  {
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}
+.nav-sidebar {
+	height:100%;
+}
+
+.affix {
+	top:0;
+	bottom:0;
+}
+.fa-arrow-up {
+    color: #F85359;
+}
+.card-base {
+  background-color: #F4F6F8;
+  border: 1px solid #DBDBDB;
+  padding: 0.9375rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1.875rem;
+  overflow-x: auto;
+}
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.docs-sidebar {
+  overflow-x: hidden;
+}

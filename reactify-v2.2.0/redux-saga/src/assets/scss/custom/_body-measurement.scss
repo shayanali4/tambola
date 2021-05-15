@@ -1,0 +1,32 @@
+.bodypartTable2{
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.buttonTableLeft{
+    height: 500px;
+    float:left;
+    list-style: none;
+}
+@media (max-width: 472px) {
+
+  .bodypartTable2{
+      height: 300px;
+  }
+
+  .buttonTableLeft{
+      height: 300px;
+  }
+}
+
+.buttonTableMiddle{
+    text-align:center;
+    float:left;
+    list-style: none;
+}
+.buttonTableRight{
+    float:left;
+    list-style: none;
+}

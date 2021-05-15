@@ -1,0 +1,204 @@
+/*====== Dark Layout Style Here ======*/
+body.dark-mode {
+  color: $dark-bg-color;
+  background-image: $dark-layout-bg;
+}
+.dark-mode {
+  .input-group-text
+  {
+    color: $dark-bg-container !important;
+  }
+
+  .ReactTable
+  {
+    a,.rt-thead .rt-tr,
+    .-pagination select,  .-pagination .-center, .-pagination input
+    {
+      color: $dark-bg-color !important;
+    }
+    .-pagination .-btn,
+    {
+      background : $dark-bg-container !important;
+    }
+    .-pagination .-btn:not([disabled]):hover
+    {
+      background : $dark-bg-container !important;
+      opacity: 0.8
+    }
+   }
+
+   .rbc-event {
+  		background: $dark-bg-container !important;
+	 }
+   .rbc-now
+   {
+     a
+     {
+        color: $dark-bg-container !important;
+     }
+   }
+   a.rbc-show-more
+   {
+     color: $dark-bg-container !important;
+   }
+   div.rbc-overlay-header
+   {
+     color: $dark-bg-container !important;
+   }
+
+
+  background-color: $dark-bg-container;
+  .sidebar-color ,.fixed-plugin .sidebar-overlay{
+    display: none;
+  }
+  .loader-overlay  {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .timer-overlay  {
+    background-color: rgba(0,0,0,0.4);
+  }
+  .timer-value
+  {
+    color : $dark-bg-color;
+  }
+
+  .sidebar-overlay-light {
+    background-color: rgba(0,0,0,0.8) !important;
+  }
+  //main section
+  .rct-footer, .rct-block-footer, .card-footer, .list-group-item, .dropdown-menu, .report-title, .modal-content, input:not(.input-search):not(.search-input-lg),
+  select, .rct-filter, .report-status, .button-nav-wrapper button, [role="document"], textarea, .listSection, .sweet-alert, .rct-wysiwyg-editor, .bg-light, .bg-light-yellow, .timeline-Widget,.horizontal-menu,.horizontal-menu .sub-menu,.horizontal-menu .sub-menu-child,.horizontal-menu .sub-menu-sub-child,table thead,
+  .total-earn-chart .default-btn-group button,.quicklink-list li a,.rct-header .quicklink-wrapper .dropdown-menu .quicklink-content .quicklink-list li a:hover,
+  .sidebar-user-block .rct-dropdown .dropdown-menu ul li a, .MuiPickersModal-dialog, .MuiPickersModal-withAdditionalAction, .MuiPickersCalendarHeader-iconButton,
+  .MuiDialogTitle-root,.MuiDialogContent-root,.MuiDialogActions-root
+   {
+    background-color: $dark-bg !important;
+  }
+  .app-header .rct-header
+  {
+    background-color: $primary !important;
+  }
+
+  .default-btn-group .btn-secondary
+  {
+    background-color: $dark-bg;
+  }
+
+
+  .horizontal-menu li:hover >a,.horizontal-menu .sub-menu li:hover >a,.horizontal-menu .sub-menu li .sub-menu-child li:hover >a,.table-hover tbody tr:hover,.quicklink-list,.sidebar-user-block .rct-dropdown .dropdown-menu ul{
+    background-color: rgba(0,0,0,0.2) !important;
+  }
+
+  .chat-box-main, .chat-sidebar, .drawer-wrapper div, .comment-box, .card-base, .rct-session-wrapper .session-inner-wrapper .session-body ,.todo-wrapper .task-box, figure.img-wrapper::after, .plan-info, .btn-light {
+    background: $dark-bg-container;
+  }
+
+  .MuiPickersDay-dayDisabled > span > p
+  {
+    color: $black !important;
+  }
+
+
+  .react-pdf__Page__textContent > span
+  {
+      color: transparent !important;
+  }
+
+
+  h1,h2,h3,h4,h5,h6,p:not(.Mui-error),span, a, table, th, td, select, input, .menu-icon, .side-arrow, .rbc-event {
+    color: $dark-bg-color !important;
+  }
+  input::placeholder,textarea::placeholder, .form-control ,
+  .rct-block *:not(span):not(i):not(.MuiFormHelperText-root):not(.fa.fa-star) ,.header-title, .humburger, .header-icon, .notification-icon a button, .cart-icon a button, .text-muted, .page-title h2, .active.breadcrumb-item,
+  .text-dark, textarea ,.total-earn-chart .default-btn-group button, .ais-Panel-header {
+    color: $dark-bg-color !important;
+  }
+
+.textfields-wrapper{
+  *:not(.Mui-error)
+  {
+      color: $dark-bg-color !important;
+  }
+}
+
+  .pricing-wrapper, .about-wrapper, .panel-wrapper, .list-wrapper, .menu-paper-wrapper, .popover-wrapper, .date-time-wrapper,
+  .stepper-wrapper, .tabs-wrapper, .select-wrapper, .re-chart-wrapper, .icons-wrapper, .data-table-wrapper,
+  .redux-table-wrapper, .divider-wrapper, .drawer-wrapper, .feedback-wrapper, .userProfile-wrapper, .avatar-wrapper,  .rct-block .rbc-event  {
+    *:not(.fa.fa-star) {
+      color: $dark-bg-color !important;
+    }
+  }
+  .rct-block, .social-card, .card, .panel, .rct-tabs header, .pricing-box, .chat-bubble.even, .task-detail-top, .btn-light i {
+    background-color: $dark-bg;
+    color: $dark-bg-color;
+    border-color: $dark-border-color;
+  }
+  .quicklink-wrapper .header-icon,.search-icon .search-wrapper .search-input-lg{
+    border-color: $white !important;
+  }
+  .rct-block *:not(.rbc-agenda-table):not(tr):not(th):not(td):not(.rbc-btn-group):not(button)
+  ,
+   input:not(.input-search), textarea, .modal-header, .modal-footer, .report-status *, .report-status,
+  .rct-mail-wrapper *, .todo-wrapper *, .chat-wrapper *, .dropdown *, .chat-head {
+    border-color: $dark-border-color !important;
+  }
+  .timer-text-color
+  {
+   fill : $white !important;
+  }
+
+
+  .slick-dots-top  li.slick-active button:before,
+  .dropdown-menu, .notification-icon .dropdown-menu
+  {
+    color: $white !important;
+  }
+
+  .slick-dots-top li button:before, .rbc-toolbar button
+  {
+    color: $white !important;
+  }
+  .bg-grdnt-violet {
+    background-image: linear-gradient(0deg, #262626 54%, #404040 100%) !important;
+  }
+
+
+  .autocomplete-dropdown-container
+  {
+      .suggestion-item{
+      background-color: $dark-bg !important;
+      }
+  }
+.goog-te-gadget-simple
+{
+    background-color: $dark-bg !important;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value span, .MuiFormLabel-root, .MuiInputBase-root
+{
+  color: $white !important;
+}
+
+div[role="listbox"], ul[role="listbox"]
+{
+    background-color: $dark-bg !important;
+    color: $white !important;
+}
+
+.MuiAppBar-colorDefault
+{
+    background-color: $dark-bg !important;
+}
+
+.input-group-text
+{
+    background-color: $dark-bg !important;
+}
+.MuiPaper-root:not(.MuiAppBar-colorPrimary)
+{
+  background-color: $dark-bg !important;
+  color: $white !important;
+}
+
+
+}

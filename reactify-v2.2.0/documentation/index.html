@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en">
+<![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en">
+<![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<title>Reactify App Document</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/stroke.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+	<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shThemeRDark.css" media="all">
+	<!-- CUSTOM -->
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+<body>
+	<div id="wrapper">
+		<section id="top" class="doc-heading">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="big-title text-center">
+							<div class="pull-left">
+								<img src="./images/upload/logo.png" / class="img-responsive" alt="site logo" width="110" height="60">
+							</div>
+							<div class="pull-right">
+								<a href="support@theironnetwork.org" class="contact-link">support@theironnetwork.org</a>
+							</div>
+						</div>
+						<!-- end title -->
+					</div>
+					<!-- end 12 -->
+				</div>
+			</div>
+		</section>
+		<div class="container-fluid">
+			<!-- end section -->
+			<div class="row">
+				<div class="col-md-3 col-lg-3">
+					<nav class="docs-sidebar" data-spy="affix" data-offset-top="0" data-offset-bottom="100" role="navigation">
+						<div class="nav-sidebar scrollbar-macosx">
+							<ul class="nav">
+								<li>
+									<a href="#line0">Introduction</a>
+								</li>
+								<li>
+									<a href="#line1">File structure</a>
+								</li>
+								<li>
+									<a href="#installation">Installation</a>
+								</li>
+								<li>
+									<a href="#credits">Credits</a>
+								</li>
+								<li>
+									<a href="#add-new-page">How To Add A New Page</a>
+								</li>
+								<li>
+									<a href="#add-new-menu">Add Menu In The Sidebar</a>
+								</li>
+								<li>
+									<a href="#authentication">Authentication</a>
+								</li>
+								<li>
+									<a href="#auth0">Auth0</a>
+								</li>
+								<li>
+									<a href="#widgets-usage">Widgets Usage</a>
+								</li>
+								<li>
+									<a href="#react-instant-search">React Instant Search (Algolia)</a>
+								</li>
+								<li>
+									<a href="#style-customization">Style Customization</a>
+								</li>
+								<li>
+									<a href="#ui-elements">UI Elements</a>
+								</li>
+								<li>
+									<a href="#faqs">Faqs</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<div class="col-md-9 col-lg-9">
+					<section class="welcome section" id="line0">
+						<div class="row">
+							<div class="col-md-12 left-align">
+								<h2 class="dark-text">Reactify - A Material Design + Bootstrap 4 ReactJs Redux Admin Template</h2>
+								<div class="row">
+									<div class="col-md-12 full">
+										<div class="intro1">
+											<ul>
+												<li>
+													<strong>Version : </strong> 2.2.0</li>
+												<li>
+													<strong>Author : </strong>
+													<a href="https://themeforest.net/user/ironnetwork" target="_blank">The IRON Network</a>
+												</li>
+											</ul>
+										</div>
+										<hr>
+										<div>
+											<p>Reactify is a fully responsive admin template developed with
+												<a href="https://reactjs.org/">Reactjs</a> and
+												<a href="https://material-ui-next.com/">Material-UI</a>. You can easy customize this template. This documentation is to help you understand the template's
+												structure. Please go through the documentation carefully to understand how this template is made and how to edit
+												this properly.
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- end row -->
+							</div>
+						</div>
+					</section>
+					<section id="line1" class="section">
+						<div class="row">
+							<div class="col-md-12 left-align">
+								<h2 class="dark-text">
+									File structure
+									<a href="#top">
+										<i class="fa fa-arrow-up" aria-hidden="true"></i>
+									</a>
+									<hr>
+								</h2>
+							</div>
+							<div class="col-md-12">
+								<pre>
+&#9500;&#9472;&#9472; dist           	   # The distribution (production) version of Reactify
+&#9500;&#9472;&#9472; reactify(redux-thunk)  # Contains the development version of Reactify Material Admin Template with Redux Thunk.
+	&#9500;&#9472;&#9472; public         # Public / Contains index.html
+	&#9500;&#9472;&#9472; src            # Source Directory
+    	    &#9500;&#9472;&#9472; actions        # Include All Redux Actions
+    	    &#9500;&#9472;&#9472; api            # Api
+    	    &#9500;&#9472;&#9472; Auth           # Auth 0 Service
+    	    &#9500;&#9472;&#9472; assets         # Static assets, styles, icons, etc...
+    	    &#9500;&#9472;&#9472; components     # App Components
+    	    &#9500;&#9472;&#9472; constants      # Contains App Settings
+    	    &#9500;&#9472;&#9472; container      # Include App Layouts
+    	    &#9500;&#9472;&#9472; firebase       # Include Firebase Config
+    	    &#9500;&#9472;&#9472; helpers        # Include Helpers
+    	    &#9500;&#9472;&#9472; lang           # Include App Locales
+    	    &#9500;&#9472;&#9472; lib            # Include App All Css Files
+    	    &#9500;&#9472;&#9472; reducers       # Include App Reducers
+    	    &#9500;&#9472;&#9472; routes         # Include App Routes Modules
+    	    &#9500;&#9472;&#9472; util           # Include Utility Components
+    	    &#9500;&#9472;&#9472; index.js       # App Entry File
+    	    &#9500;&#9472;&#9472; App.js         # App Container Wrapper
+	&#9500;&#9472;&#9472; package.json          # package.json
+	&#9500;&#9472;&#9472; package-lock.json     # package-lock.json
+	&#9500;&#9472;&#9472; README.md             # README.md
+	&#9500;&#9472;&#9472; .eslintrc             # eslint
+	&#9500;&#9472;&#9472; .babelrc              # babel
+	&#9500;&#9472;&#9472; .gitignore            # gitignore
+	&#9500;&#9472;&#9472; webpack.config.js     # Webpack Config
+&#9500;&#9472;&#9472; reactify(redux-saga)       # Contains the development version of Reactify Material Admin Template with Redux Saga.
+&#9500;&#9472;&#9472; seed 		       # Contains the seed version of Reactify Material Admin Template.
+   &#9500;&#9472;&#9472; reactify(redux-thunk)   	  # Contains the seed version of Reactify Material Admin Template with Redux Thunk.
+   &#9500;&#9472;&#9472; reactify(redux-saga)    	  # Contains the seed version of Reactify Material Admin Template with Redux Saga.
+&#9500;&#9472;&#9472; documentation 	       # Contains the documentation of Reactify Material Admin Template.
+								</pre>
+							</div>
+							<!-- end col -->
+						</div>
+						<!-- end row -->
+					</section>
+					<section id="installation" class="section">
+						<h2 class="dark-text">Installation
+							<a href="#top">
+								<i class="fa fa-arrow-up" aria-hidden="true"></i>
+							</a>
+							<hr>
+						</h2>
+						<ul>
+							<li>Install Node JS</li>
+							<li>Install npm</li>
+							<li>Install Packages & Dependencies </li>
+						</ul>
+						<p>
+							<b>Reactify is based on Webpack 4.x, There are lot of tricks that can help your app, like API connection, Deployment
+								etc. and we mention link below:</b>
+						</p>
+						<h4 class="bold">
+							<a href="https://webpack.js.org/">Webpack</a>
+						</h4>
+						<div class="col-md-12 left-align">
+							<h4>Development prerequisites</h4>
+							<ol>
+								<li>
+									<strong>Install Node.js and NPM </strong> : Download Node.js Recommended Version from
+									<a href="https://nodejs.org/en/download/" target="_blank">https://nodejs.org/en/download/</a> and install it on your system. NPM comes bundled with Node.js
+								</li>
+								<li>
+									<strong>Install npm packages </strong> : In terminal go to your project root directory and run
+									<code> npm install </code> command, it will download all the dependencies under node_modules folder.</li>
+							</ol>
+						</div>
+						<div class="col-md-12">
+							<h5>Running development server</h5>
+							<p>Run
+								<code> npm start </code> command to run dev server and access
+								<code> http://localhost:3000/</code> to run your app/project on browser. The app will automatically reload if you change any of the source files.
+							</p>
+							<h5>Production building</h5>
+							<p>Run
+								<code> npm run build </code> to build the project. The build will be stored in the
+								<code>dist/</code> directory.
+								<h5>Further help</h5>
+								<p> To get more help on the
+									<code> webpack 4.x</code> go check out
+									<a href="https://webpack.js.org/">https://webpack.js.org/</a>
+								</p>
+						</div>
+						<!-- end row -->
+					</section>
+					<section class="section" id="credits" style="position:static">
+						<div class="row">
+							<div class="col-md-12 left-align">
+								<h2 class="dark-text">Credits
+									<a href="#top">
+										<i class="fa fa-arrow-up" aria-hidden="true"></i>
+									</a>
+									<hr>
+								</h2>
+							</div>
+							<div class="col-md-12">
+								<ul class="doc-list">
+									<li>
+										<a href="https://reactjs.org/">Reactjs</a>
+									</li>
+									<li>
+										<a href="https://material-ui.com/">Material-UI</a>
+									</li>
+									<li>
+										<a href="https://reactstrap.github.io/">reactstrap</a>
+									</li>
+									<li>
+										<a href="https://redux.js.org/">Redux</a>
+									</li>
+									<li>
+										<a href="https://webpack.js.org/">Webpack 4.x</a>
+									</li>
+									<li>
+										<a href="https://reacttraining.com/react-router/web/guides/philosophy">React Router 4</a>
+									</li>
+									<li>
+										<a href="https://github.com/gaearon/redux-thunk">Redux Thunk</a>
+									</li>
+									<li>
+										<a href="https://github.com/redux-saga/redux-saga">Redux Saga</a>
+									</li>
+									<li>
+										<a href="https://community.algolia.com/react-instantsearch/">react-instantsearch</a>
+									</li>
+									<li>
+										<a href="http://recharts.org">recharts</a>
+									</li>
+									<li>
+										<a href="https://github.com/axios/axios">axios</a>
+									</li>
+									<li>
+										<a href="https://github.com/auth0/auth0.js">auth0-js</a>
+									</li>
+									<li>
+										<a href="https://github.com/akiran/react-slick">Slick Slider</a>
+									</li>
+									<li>
+										<a href="https://themify.me/themify-icons">Themify Icons</a>
+									</li>
+									<li>
+										<a href="https://www.materialpalette.com/icons">Material Icons</a>
+									</li>
+									<li>
+										<a href="https://github.com/zenoamaro/react-quill">React Quill</a>
+									</li>
+									<li>
+										<a href="https://github.com/jpuri/react-draft-wysiwyg">React Draft Wysiwyg</a>
+									</li>
+									<li>
+										<a href="https://github.com/google-map-react/google-map-react">Google Maps</a>
+									</li>
+									<li>
+										<a href="https://github.com/PaulLeCam/react-leaflet">Leaflet Maps</a>
+									</li>
+									<li>
+										<a href="https://github.com/dmahapatro/react-jvectormap">Jvector Map</a>
+									</li>
+									<li>
+										<a href="https://github.com/bevacqua/react-dragula">React Dragula</a>
+									</li>
+									<li>
+										<a href="https://github.com/react-dnd/react-dnd">React Dnd</a>
+									</li>
+									<li>
+										<a href="https://github.com/sindresorhus/screenfull.js/">Screenfull </a>
+									</li>
+									<li>
+										<a href="https://momentjs.com/">Moment.js </a>
+									</li>
+									<li>
+										<a href="https://github.com/intljusticemission/react-big-calendar">React Big Calendar</a>
+									</li>
+									<li>
+										<a href="https://github.com/djorg83/react-bootstrap-sweetalert">React Bootstrap Sweetalert</a>
+									</li>
+									<li>
+										<a href="https://github.com/malte-wessel/react-custom-scrollbars">React Custom Scrollbars</a>
+									</li>
+									<li>
+										<a href="https://github.com/palerdot/react-d3-speedometer">React d3 Speedometer</a>
+									</li>
+									<li>
+										<a href="https://github.com/voronianski/react-star-rating-component">Star Ratings</a>
+									</li>
+									<li>
+										<a href="https://github.com/minhtranite/react-notifications">React notifications</a>
+									</li>
+									<li>
+										<a href="https://github.com/danilowoz/react-content-loader">React Content Loader</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section id="add-new-page" class="section">
+						<div class="row">
+							<div class="col-md-12 left-align">
+								<h2 class="dark-text">
+									How To Add A New Page In The App
+									<a href="#top">
+										<i class="fa fa-arrow-up" aria-hidden="true"></i>
+									</a>
+									<hr>
+								</h2>
+							</div>
+							<div class="col-md-12 left-align">
+								<p>Follow these steps to add a new page in the app.</p>
+								<h4>Step 1. Create a Component</h4>
+								<p>Create a folder under
+									<code>src/routes</code> directory. e.g. we have created
+									<code>dashboard</code> folder in this case. Now created a file in this folder e.g. we have created a
+									<code>index.js</code> file in this case. This will be a react component e.g.</p>
+								<pre class="brush: html container">
+							   /*
+							    * Dashboard Page
+							    */
+							   import React, { Component } from 'react';
+
+				               class DashboardPage extends Component {
+				                 render() {
+				                 	return (
+                                      <div className="app-module-wrapper">
+                                      	<h4>You Created The Component Successfully!</h4>
+                                      </div>
+				                 	)
+				                 }
+				               }
+
+				               export default DashboardPage;
+				               </pre>
+								<h4>Step 2. Define Asynchronous Component</h4>
+								<p>Reactify comes with code splitting feature means if you are creating a page you must need to define your component
+									asynchronous under
+									<code>src/components/AsyncComponent/AsyncComponent</code> file. e.g. we have defined in this case.</p>
+								<pre class="brush: html container">
+				               	...
+
+				               	// dashboard
+	                            const AsyncDashboardComponent = Loadable({
+								    loader: () => import("Routes/dashboard/index.js"),
+								    loading: () => 	&#60;RctPageLoader /&#62;,
+								});
+				               </pre>
+								<h4>Step 3. Define Route</h4>
+								<p>Define your route in
+									<code>src/route/index.js</code> file. First you need to import your asynchronous component that you defined in the
+									<code>src/components/AsyncComponent/AsyncComponent</code> file. e.g.</p>
+								<pre class="brush: html container">
+				               	...
+
+				               	// async component
+								import {
+								  AsyncDashboardComponent
+								} from 'Components/AsyncComponent/AsyncComponent';
+				               </pre>
+								<p>After import component you need to define path for your component under
+									<code>src/routes/index.js</code> file.</p>
+								<img class="img-responsive" alt="rct-screenshot" src="./images/add-route.png">
+								<p>After completed this now you can access your path in the browser that you have defined.</p>
+							</div>
+						</div>
+					</section>
+					<section class="section" id="add-new-menu">
+						<div class="row">
+							<div class="col-md-12 left-align">
+								<h2 class="dark-text">
+									How To Add Menu In The Sidebar Navigation
+									<a href="#top">
+										<i class="fa fa-arrow-up" aria-hidden="true"></i>
+									</a>
+									<hr>
+								</h2>
+							</div>
+							<div class="col-md-12 left-align">
+								<p>After creating a new page you can add menu into the sidebar navigation menus. Open
+									<code>src/components/Sidebar/NavLinks.js</code> file and add it. e.g.,</p>
+								<pre class="brush: html container">
+								// nav links
+								export default [
+								  category1: {
+								  	{
+				                        "menu_title": "sidebar.dashboard",  // menu title
+				                        "menu_icon": "ti-dashboard",        // menu icon
+				                        "path": "/app/dashboard",           // path
+				                        "child_routes": null                // child routes
+								    },
+								    ...
+								]
+								</pre>
+							</div>
+						</div>
+					</section>
+					<section id="authentication">
+						<h2 class="dark-text">
+							Authentication
+							<a href="#top">
+								<i class="fa fa-arrow-up" aria-hidden="true"></i>
+							</a>
+							<hr>
+						</h2>
+						<h4>We provide third party Authenticate integration in our Project. That is FireBase</h4>
+						<div>
+							<h2>Add Firebase to your JavaScript Project </h2>
+							<p>Before you begin, you'll need a JavaScript (web or Node.js) app to add Firebase to. If you don't have an app already,
+								you can download one of our
+								<a href="https://firebase.google.com/docs/samples/?authuser=0#web">quickstart samples</a>. If you are upgrading from a 2.x version of the Firebase SDK, see our
+								<a href="https://firebase.google.com/support/guides/firebase-web?authuser=0">upgrade guide for Web / Node.js </a>to get started.</p>
+							<p>If you are interested in using Node.js in privileged environments such as servers or serverless backends like Cloud
+								Functions (as opposed to clients for end-user access like a Node.js desktop or IoT device), you should instead follow
+								the instructions for setting up the Admin SDK.</p>
+							<h2>Add Firebase to Your app</h2>
+							<p>To add Firebase to your app, you'll need a Firebase project, the Firebase SDK, and a short snippet of initialization
+								code that has a few details about your project.</p>
+							<ol>
+								<li>Create a Firebase project in the
+									<a href="https://console.firebase.google.com/">Firebase console</a>, if you don't already have one.
+									<ul>
+										<li>If you already have an existing Google project associated with your app, click Import Google Project. Otherwise,
+											click Create New Project.</li>
+										<li>If you already have apps in your project, click Add Another App from the project overview page.</li>
+									</ul>
+								</li>
+								<li>Click Add Firebase to your web app.</li>
+								<li>Note the initialization code snippet, which you will use in a minute.</li>
+								<li>
+									<b>Folder Doc: </b> src/firebase/index.js</li>
+							</ol>
+							<img src="images/firebase-file.png" alt="firebase image" class="img-fluid" />
+						</div>
+					</section>
+					<section id="auth0">
+						<div class="row">
+							<div class="col-md-12 left-align">
+								<h2 class="dark-text">
+									Auth0 Integration
+									<a href="#top">
+										<i class="fa fa-arrow-up" aria-hidden="true"></i>
+									</a>
+									<hr>
+								</h2>
+							</div>
+							<div class="col-md-12 left-align">
+								<p>Reactify comes with Auth0 authentication. You can easily authorize user in your app. Here is step by step instructions
+									to use auth0 into your app.</p>
+								<img class="img-responsive" src="./images/auth0-signin-preview.png">
+								<h4>Configure Callback URLs</h4>
+								<p>A callback URL is a URL in your application where Auth0 redirects the user after they have authenticated.</p>
+								<p>You need to whitelist the callback URL for your app in the Allowed Callback URLs field in your Application Settings.
+									If you do not set any callback URL, your users will see a mismatch error when they log in.</p>
+								<p>If you are following along with the downloadable sample projects for this tutorial directly, the Callback URL should
+									be set to
+								</p>
+								<pre>http://localhost:3000/callback</pre>
+								<p>Open auth0-variables.js to configure callback url under the
+									<code>src/Auth</code> directory.
+								</p>
+								<img class="img-responsive" src="./images/auth0-config.png">
+								<p>You also need to add callback url in auth0 application settings.</p>
+								<img class="img-responsive" src="./images/auth0-app-settings.png">
+								<p>To get more information about auth0 check the official
+									<a href="https://auth0.com/">document</a>
+								</p>
+							</div>
+						</div>
+					</section>
+					<section id="widgets-usage" class="section">
+						<div class="row">
+							<div class="col-md-12 left-align">
+								<h2 class="dark-text">
+									How To Use Widgets
+									<a href="#top">
+										<i class="fa fa-arrow-up" aria-hidden="true"></i>
+									</a>
+									<hr>
+								</h2>
+							</div>
+							<div class="col-md-12 left-align">
+								<p>Reactify App comes with widgets you can easily use these widgets in your app. Widgets are more usefull to build your
+									app faster. You need to pass data in widgets your component is ready.</p>
+								<h4>Steps To Use Widgets With Dynamic Data Using Http Request:</h4>
+								<p>We have integrated third party library for http-request to connect backend server. For more details about http-request
+									<a href="https://github.com/axios/axios">Click here.</a>
+								</p>
+								<img src="./images/http-request.png" alt="http-request">
+								<p>We have used
+									<a href="http://reactify.theironnetwork.org/data/todo.js">http://reactify.theironnetwork.org/data/todo.js</a> to fetch data from the backend server.</p>
+								<p>To change this url you need to add your base url into the
+									<code>src/api/index.js</code> file.</p>
+								<img src="./images/api.png" alt="appi">
+								<h4>Steps To Use Widgets With Static Data:</h4>
+								<p>First you need to import widget whatever you want in your page and module as per your requirement. e.g.</p>
+								<pre class="brush: html container">
+							   /*
+							    * Dashboard Page
+							    */
+							   import React, { Component } from 'react';
+				               import { TodoListWidget } from 'Components/Widgets';
+
+				               // import here your todo data. We are using a separate file to define data
+				               import { todoListData } from './data.js';
+
+				               class DashboardPage extends Component {
+				                 render() {
+				                 	return (
+                                      <div className="app-module-wrapper">
+                                      	&#60;TodoListWidget data={todoListData} /&#62;
+                                      </div>
+				                 	)
+				                 }
+				               }
+
+				               export default DashboardPage;
+				               </pre>
+								<p>Defining data in separate file e.g.
+									<code>data.js</code>
+								</p>
+								<pre class="brush: html container">
+							   export const todoListData = [
+							     {
+							        id: 1,
+							        title: 'Meeting with Cristiane',
+							        date: 'Today 15:30',
+							        completed: true
+							    },
+							    {
+							        id: 2,
+							        title: 'Create Pages for Gene',
+							        date: 'Today 12:30',
+							        completed: false
+							    },
+							    {
+							        id: 3,
+							        title: 'Document For Reactify.',
+							        date: 'Today 12:30',
+							        completed: true
+							    },
+							    {
+							        id: 4,
+							        title: 'Pay All Bill.',
+							        date: 'Today 20:30',
+							        completed: true
+							    },
+							    {
+							        id: 5,
+							        title: 'Metting with Jone Doe',
+							        date: 'Today 20:30',
+							        completed: false
+							    }
+							   ]
+				               </pre>
+								<p>Your Component Is Ready.</p>
+							</div>
+						</div>
+						<!-- end row -->
+					</section>
+					<section class="section" id="react-instant-search">
+						<div class="row">
+							<div class="col-md-12 left-align">
+								<h2 class="dark-text">React Instant Search
+									<a href="#top">
+										<i class="fa fa-arrow-up" aria-hidden="true"></i>
+									</a>
+									<hr>
+								</h2>
+							</div>
+							<div class="col-md-12 left-align">
+								<p>React-InstantSearch makes it easy to design the perfect search experience using prepackaged search components or
+									creating your own!</p>
+								<p>We have used shop page demo example to integrate instant search. There is lot of premade demo example on the
+									<a href="https://community.algolia.com/react-instantsearch/examples/Demos.html">official doc</a>. In reactify you can see the demo on this url
+									<a href="http://reactify.theironnetwork.org/app/ecommerce/shop">http://reactify.theironnetwork.org/app/ecommerce/shop</a>
+								</p>
+								<h4>Getting Started</h4>
+								<ol>
+									<li>To Use algolia, first you need to go to algolia official website and open an app and provide Necessary indices and
+										data and configure as per as their
+										<a href="https://www.algolia.com/doc/">documentation</a>.
+									</li>
+									<li>Create an account on algolia and then go to the dashboard and create a new application.
+										<img src="./images/create-algolia-app.png" class="img-responsive">
+									</li>
+									<li class="mb-20">Go to the indices and it will look like this
+										<img src="./images/app-preview.png" class="img-responsive">
+									</li>
+									<li>Add your credential details under the
+										<code>src/routes/ecommerce/shop/index.js</code>
+										<img src="./images/algoliaLayout.png" class="img-responsive">
+									</li>
+								</ol>
+								<p>To get more information about algolia instant search check the official
+									<a href="https://community.algolia.com/react-instantsearch/">document</a>.</p>
+							</div>
+						</div>
+					</section>
+					<!-- end section -->
+					<section class="section" id="style-customization">
+						<div class="row">
+							<div class="col-md-12 left-align">
+								<h2 class="dark-text">Design style customization
+									<a href="#top">
+										<i class="fa fa-arrow-up" aria-hidden="true"></i>
+									</a>
+									<hr>
+								</h2>
+							</div>
+							<div class="col-md-12">
+								<p>Reactify App is developed with
+									<a href="https://reactstrap.github.io/">React strap</a> and
+									<a href="https://material-ui-next.com/">Material Ui Next</a> so its easy to change the styling for your app. We can Easly use its components which is basid
+									on bootstarp and material. It uses some custom variables which provides you the more fexibility and control over
+									design
+								</p>
+								<h5>Changing Default Variables</h5>
+								<p>Open
+									<code> _bootstrap-override.scss </code> file under
+									<code> assets/scss </code> folder and change style variable values as per your requirement.</p>
+								<h5>Change Theme Colors</h5>
+								<pre class="brush: html container">
+									//App Background Scale
+
+									$blue:             #5C6AC4 !default; //Manage Primary Color
+									$cyan:             #47C1BF !default; //Manage Info Color
+									$green:            #50B83C !default; //Manage Success Color
+									$yellow:           #F49342  !default; //Manage Warning Color
+									$red:              #DE3618 !default; //Manage Danger Color
+
+									$indigo:           #174176 !default;
+									$teal:             #007ACE !default; // Manage Secondary Color
+
+									$purple:           #6f42c1 !default;
+									$pink:             #FF2B72 !default;
+									$orange:           #EEC200 !default;
+
+									</pre>
+								<h5>Gradient Colors</h5>
+								<p>If you want to use gradient color then
+									<p>Open
+										<code> _app-variables.scss </code> file under
+										<code> assets/scss </code> folder use these variables change Our theme Gradient Color.</p>
+									<pre class="brush: html container">
+									// Gradient Theme Color
+
+									$light-primary:                   darken($primary, 5%); // Primary
+									$light-blue:                      darken($secondary, 5%); // blue
+									$light-info:                      darken($info, 5%); // Info
+									$light-success:                   darken($success, 5%); // Success
+									$light-warning:                   darken($warning, 5%); // warning
+									$light-danger:                    darken($red, 5%); // danger
+									$light-purple:                    darken($purple, 5%); // purple
+									</pre>
+									<h5>Change Text Colors</h5>
+									<pre class="brush: html">
+									// App Text Scale
+
+									$white:                          #fff !default;
+									$gray-100:                       #F4F6F8 !default;
+									$gray-200:                       #ECEDEF !default;
+									$gray-300:                       #DBDBDB !default;
+									$gray-400:                       #C6C9CF !default;
+									$gray-500:                       #919EAB !default;
+									$gray-600:                       #657786 !default;
+									$gray-700:                       #454F5B !default;
+									$gray-800:                       #393C40 !default;
+									$gray-900:                       #14171A !default;
+									$black:                          #000 !default;
+									</pre>
+									<br>
+									<h5>Sidebar Customization</h5>
+									<p>By changing following variable values you can customize the sidebar. All these variables which is mentioned below
+										alls are defined in
+										<code> _app-variables.scss </code>
+									</p>
+									<pre class="brush: html">
+									// Sidebar Variable
+
+									$sidebar-width:                   16.25rem; //280px;
+									$sidebar-overlay:                 $light-primary;
+									$sidebar-box-shadow:              none;
+
+									$sidebar-link-fontsize:           1rem; //16px
+									$sidebar-link-font-weight:        400;
+									$sidebar-link-font-color:         $white;
+									$sidebar-link-transform:          capitalize;
+									$sidebar-link-spacing:            0.9375rem 2rem; //15px 40px;
+
+									$sidebar-icon-font-size:          1rem; //16px;
+
+									$sidebar-hover-bg:                rgba(0,0,0,0.22);
+									$sidebar-hover-color:             $white;
+
+									$sidebar-submenu-font-size:       1rem; //16px
+									$sidebar-submenu-font-color:      $white;
+									$sidebar-submenu-spacing:         0.9375rem 2.5rem 0.9375rem 4.375rem;
+
+									// Mini Sidebar Variable
+
+									$mini-sidebar-width:              85px;
+									</pre>
+									<h5>Centent Block</h5>
+									<p>Customize your main block setting with help of following variables. Go to
+										<code>_app.variables.scss</code> file and change following values.</p>
+									<pre class="brush: html">
+									// Block Settings
+
+									$block-bg:                       $white;
+									$block-border-radius:            5px;
+									$block-border:                   none;
+									$block-spacing:                  1.25rem 1.25rem; //20px 20px;
+									$block-shadow:                   0 0 0 1px rgba(63,63,68,0.05), 0 1px 3px 0 rgba(63,63,68,0.15);
+									$block-hover-shadow:             0 6px 6px 0 rgba(0,0,0,0.10), 0 10px 25px 0 rgba(0,0,0,0.18);
+									$block-margin-bottom:            1.875rem; //30px
+									$block-transition:               all 0.4s ease-in-out 0s;
+
+									$block-title-color:              $gray-600;
+									$block-title-spacing:            0.9375rem 1.25rem; //15px 20px;
+									$block-title-font-size:          1.125rem; //18px
+									$block-title-font-weight:        400;
+									$block-title-transform:          capitalize;
+									$block-title-border-color:       $blue;
+									$block-title-border-width:       4px;
+
+									$block-contextual-color:         #BDC1C3;
+									$block-contextual-font-size:     1rem;
+
+									$block-footer-border-width:      1px;
+									$block-footer-border-color:      $gray-300;
+
+									</pre>
+									</br>
+									<h5>Change Header Styling go to
+										<code>_app.variables.scss</code> file and change following values.</h5>
+									<pre class="brush: html">
+									// Navbar Varibale
+
+									$navbar-height:                   5rem; //80px;
+									$navbar-bg:                       $white;
+									$navbar-box-shadow:               0 0 0 1px rgba(63,63,68,0.05), 0 1px 3px 0 rgba(63,63,68,0.15);
+									$hamburger-icon-color:            $gray-600;
+									$navbar-icon-height:              40px;
+									$navbar-icon-width:               40px;
+									$navbar-link-color:               $gray-600;
+									</pre>
+									</br>
+									<h5>Change Footer Styling go to
+										<code>_app.variables.scss</code> file and change following values.</h5>
+									<pre class="brush: html">
+									// Footer Variable
+
+									$footer-height:                   50px;
+									$footer-bg:                       $navbar-bg;
+									$footer-box-shadow:               $navbar-box-shadow;
+									</pre>
+									</br>
+									<h5>Main Container</h5>
+									<p>To change app backgroud color go to
+										<code>_bootstrap.override.scss</code> file and change following values.</p>
+									<pre class="brush: html">
+
+									// Settings for the <code> &lt;body&gt; </code> element.
+									$body-bg:                     	$gray-100 !default;
+									$body-color:                  	$gray-700 !default;
+
+									// stylelint-disable value-keyword-case
+									$font-family-sans-serif:         'Roboto', sans-serif !default;
+									$font-family-monospace:          SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+									$font-family-base:               $font-family-sans-serif !default;
+
+									</pre>
+									</br>
+									<h5>Fonts</h5>
+									<p>Change the font family and font size in
+										<code>_app.variables.scss</code> file.</p>
+									<pre class="brush: html">
+									// stylelint-enable value-keyword-case
+
+									$font-size-base:                  1rem !default; // Assumes the browser default, typically `16px`
+									$font-size-lg:                    ($font-size-base * 1.25) !default;
+									$font-size-sm:                    ($font-size-base * .875) !default;
+
+									$font-weight-light:                               300 !default;
+									$font-weight-normal:              400 !default;
+									$font-weight-bold:                700 !default;
+
+									$font-weight-base:                $font-weight-normal !default;
+									$line-height-base:                1.5 !default;
+									</pre>
+									<p>
+										<Strong>To change app font family, you need to load appropriate font family from google or from other custom source in
+											the head tag of index.html file.</Strong>
+									</p>
+									<p>Google font example</p>
+									<pre class="brush: html">
+									<!-- Use For Google Font -->
+								  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,500i,700,900" rel="stylesheet">
+								</pre>
+									<h4>Heading</h4>
+									<p>With help of following variables you can easily change font sizes for all headings ( h1 to h6 ).</p>
+									<pre class="brush: html">
+									// Setting For Heading Element
+
+									$h1-font-size:                    2.25rem !default; //36px
+									$h2-font-size:                    1.875rem !default; //30px
+									$h3-font-size:                    1.5rem !default; //24px
+									$h4-font-size:                    1.125rem !default; //18px
+									$h5-font-size:                    1rem !default; //16px
+									$h6-font-size:                    0.875rem !default; //14px
+
+									$headings-margin-bottom:          ($spacer / 2) !default;
+									$headings-font-family:            inherit !default;
+									$headings-font-weight:            400 !default;
+									$headings-line-height:            1.2 !default;
+									$headings-color:                  inherit !default;
+				        </pre>
+									<br>
+									<h4 class="mt-3">Changing Color Values For Charts And Map</h4>
+									<p>If you want to change the colors on "Charts" then go to that specfic chart type and make changes inside its ComponentName.js
+										file.
+									</p>
+									<p>example: to change the color on "Dashboard Chart", go to src/constants/chart-config.js and change values:</p>
+									<pre class="brush: html">
+									/**
+									* Change all chart colors
+									*/
+									const ChartConfig = {
+									  color: {
+									    'primary': '#5C6AC4',
+									    'warning': '#EEC200',
+									    'danger': '#DE3618',
+									    'success': '#50B83C',
+									    'info': '#47C1BF',
+									    'default': '#657786',
+									    'purple': '#007ACE',
+									    'sky': '#007ACE',
+									    'yellow': '#F49342',
+									    'white': '#FFFFFF',
+									    'dark': '#000000',
+									    'greyLighten': '#DFE3E8',
+									    'grey': '#9FA5AB'
+									  },
+									  legendFontColor: '#AAAEB3', // only works on react chart js 2
+									  chartGridColor: '#EAEAEA',
+									  axesColor: '#657786',
+									  shadowColor: 'rgba(0,0,0,0.5)'
+									}
+									// Tooltip Styles
+									export const tooltipStyle = {
+									  backgroundColor: 'rgba(0,0,0,0.6)',
+									  border: '1px solid rgba(0,0,0,0.6)',
+									  borderRadius: '5px'
+									}
+									export const tooltipTextStyle = {
+									  color: '#FFF',
+									  fontSize: '12px',
+									  paddingTop: '5px',
+									  paddingBottom: '5px',
+									  lineHeight: '1'
+									}
+									export default ChartConfig;
+								</pre>
+							</div>
+						</div>
+					</section>
+					<section id="ui-elements">
+						<div class="row">
+							<div class="col-md-12 left-align">
+								<h2 class="dark-text">UI Elements
+									<a href="#top">
+										<i class="fa fa-arrow-up" aria-hidden="true"></i>
+									</a>
+									<hr>
+								</h2>
+							</div>
+							<div class="col-md-12 left-align">
+								<h4>Reactify App has following UI elements integrated</h4>
+								<ol class="doc-list">
+									<li>
+										<a href="#alerts">Alerts</a>
+									</li>
+									<li>
+										<a href="#appbar">App Bar</a>
+									</li>
+									<li>
+										<a href="#avatars">Avatars</a>
+									</li>
+									<li>
+										<a href="#badges">Badges</a>
+									</li>
+									<li>
+										<a href="#bottomNavigation">Bottom Navigation</a>
+									</li>
+									<li>
+										<a href="#buttons">Buttons</a>
+									</li>
+									<li>
+										<a href="#cardMasonry">Card masonry</a>
+									</li>
+									<li>
+										<a href="#cards">Cards</a>
+									</li>
+									<li>
+										<a href="#chip">Chip</a>
+									</li>
+									<li>
+										<a href="#dialogs">Dialogs</a>
+									</li>
+									<li>
+										<a href="#divider">Divider</a>
+									</li>
+									<li>
+										<a href="#Drawers">drawers</a>
+									</li>
+									<li>
+										<a href="#expansionPanel">Expansion Panel</a>
+									</li>
+									<li>
+										<a href="#gridList">Grid List</a>
+									</li>
+									<li>
+										<a href="#list">List</a>
+									</li>
+									<li>
+										<a href="#menu">Menu</a>
+									</li>
+									<li>
+										<a href="#popovers">Popovers</a>
+									</li>
+									<li>
+										<a href="#progress">Progress</a>
+									</li>
+									<li>
+										<a href="#selectionControls">Selection Controls</a>
+									</li>
+									<li>
+										<a href="#snackbar">Snackbar</a>
+									</li>
+								</ol>
+							</div>
+							<div class="col-md-12 left-align">
+								<div id="alerts">
+									<h4>
+										<b>Alerts</b>
+									</h4>
+									<p>The
+										<code>&lt;Alert&gt;&lt;/Alert&gt;</code> component replaces the standard html Alert. Any color helper class can be used to alter the color.</p>
+									<pre class="brush: html">
+										&lt;Alert color=&quot;primary&quot;&gt;
+									        This is a primary alert &mdash; check it out!
+									    &lt;/Alert&gt;
+									    &lt;Alert color=&quot;secondary&quot;&gt;
+									        This is a secondary alert &mdash; check it out!
+									    &lt;/Alert&gt;
+									    &lt;Alert color=&quot;success&quot;&gt;
+									        This is a success alert &mdash; check it out!
+									    &lt;/Alert&gt;
+									    &lt;Alert color=&quot;danger&quot;&gt;
+									        This is a danger alert &mdash; check it out!
+									    &lt;/Alert&gt;
+									    &lt;Alert color=&quot;warning&quot;&gt;
+									        This is a warning alert &mdash; check it out!
+									    &lt;/Alert&gt;
+									    &lt;Alert color=&quot;info&quot;&gt;
+									        This is a info alert &mdash; check it out!
+									    &lt;/Alert&gt;
+									    &lt;Alert color=&quot;light&quot;&gt;
+									        This is a light alert &mdash; check it out!
+									    &lt;/Alert&gt;
+									    &lt;Alert color=&quot;dark&quot;&gt;
+									        This is a dark alert &mdash; check it out!
+									    &lt;/Alert&gt;
+				          </pre>
+									<div class="card-base">
+										<img src="images/alerts.png" alt="alert demo" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 left-align">
+								<div id="appbar">
+									<h4>
+										<b>appbar</b>
+									</h4>
+									<p>The
+										<code>AppBar</code> formerly known as the action bar in Android, is a special kind of toolbar that’s used for branding, navigation,
+										search, and actions.</p>
+									<p>Reactify App provide multiple type of App Bar and each one has a unique design.</p>
+									<pre class="brush: html">
+										&lt;AppBar position=&quot;static&quot;&gt;
+											&lt;Toolbar&gt;
+												&lt;IconButton className={classes.menuButton} color=&quot;inherit&quot; aria-label=&quot;Menu&quot;&gt;
+													&lt;MenuIcon /&gt;
+												&lt;/IconButton&gt;
+												&lt;Typography variant=&quot;title&quot; color=&quot;inherit&quot; className={classes.flex}&gt;
+													Title
+												&lt;/Typography&gt;
+												&lt;Button color=&quot;inherit&quot;&gt;Login&lt;/Button&gt;
+											&lt;/Toolbar&gt;
+										&lt;/AppBar&gt;
+									</pre>
+									<div class="card-base">
+										<img src="images/app-bar.png" alt="alert demo" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 left-align">
+								<div id="avatars">
+									<h4>
+										<b>Avatars</b>
+									</h4>
+									<p>Avatars are found throughout material design with uses in everything from tables to dialog menus.</p>
+									<p>Reactify App provide multiple type of Avatars style and each one has a unique design.</p>
+									<pre class="brush: html">
+								    &lt;Avatar className={classes.avatar}&gt;H&lt;/Avatar&gt;
+								    &lt;Avatar className={classes.orangeAvatar}&gt;N&lt;/Avatar&gt;
+								    &lt;Avatar className={classes.purpleAvatar}&gt;OP&lt;/Avatar&gt;
+									</pre>
+									<div class="card-base">
+										<img src="images/avatar.png" alt="alert demo" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 left-align">
+								<div id="badges">
+									<h4>
+										<b>badges</b>
+									</h4>
+									<p>Examples of badges containing text, using primary and secondary colors. The badge is applied to its children.</p>
+									<pre class="brush: html">
+								    &lt;Badge badgeContent={4} color=&quot;primary&quot;&gt;
+							          &lt;MailIcon /&gt;
+							        &lt;/Badge&gt;
+							        &lt;Badge badgeContent={10} color=&quot;secondary&quot;&gt;
+							          &lt;MailIcon /&gt;
+							        &lt;/Badge&gt;
+							        &lt;IconButton&gt;
+							          &lt;Badge badgeContent={4} color=&quot;primary&quot;&gt;
+							            &lt;MailIcon /&gt;
+							          &lt;/Badge&gt;
+							        &lt;/IconButton&gt;
+					        </pre>
+									<div class="card-base">
+										<img src="images/badge.png" alt="alert demo" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 left-align">
+								<div id="bottomNavigation">
+									<h4>
+										<b>bottomNavigation</b>
+									</h4>
+									<p>The
+										<code>Bottom navigation</code> bars make it easy to explore and switch between top-level views in a single tap.</p>
+									<pre class="brush: html">
+							      &lt;BottomNavigation
+							        value={value}
+							        onChange={this.handleChange}
+							        showLabels&gt;
+							        &lt;BottomNavigationAction label=&quot;Recents&quot; icon={&lt;RestoreIcon /&gt;} /&gt;
+							        &lt;BottomNavigationAction label=&quot;Favorites&quot; icon={&lt;FavoriteIcon /&gt;} /&gt;
+							        &lt;BottomNavigationAction label=&quot;Nearby&quot; icon={&lt;LocationOnIcon /&gt;} /&gt;
+							      &lt;/BottomNavigation&gt;
+					        </pre>
+									<div class="card-base">
+										<img src="images/button-navigation.png" alt="alert demo" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 left-align">
+								<div id="buttons">
+									<h4>
+										<b>buttons</b>
+									</h4>
+									<p>The
+										<code>Buttons</code> communicate the action that will occur when the user touches them.</p>
+									<p>Material buttons trigger an ink reaction on press. They may display text, imagery, or both. Flat buttons and raised
+										buttons are the most commonly used types.</p>
+									<pre class="brush: html">
+								  &lt;Button variant=&quot;raised&quot; className={classes.button}&gt;
+							        Default
+							      &lt;/Button&gt;
+							      &lt;Button variant=&quot;raised&quot; color=&quot;primary&quot; className={classes.button}&gt;
+							        Primary
+							      &lt;/Button&gt;
+							      &lt;Button variant=&quot;raised&quot; color=&quot;secondary&quot; className={classes.button}&gt;
+							        Secondary
+							      &lt;/Button&gt;
+							      &lt;Button variant=&quot;raised&quot; color=&quot;secondary&quot; disabled className={classes.button}&gt;
+							        Disabled
+							      &lt;/Button&gt;
+					        </pre>
+									<div class="card-base">
+										<img src="images/buttons.png" alt="alert demo" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 left-align">
+								<div id="cardMasonry">
+									<h4>
+										<b>cardMasonry</b>
+									</h4>
+									<pre class="brush: html">
+									&lt;CardColumns&gt;
+								      &lt;Card&gt;
+								        &lt;CardImg top width=&quot;100%&quot; src=&quot;https://placeholdit.imgix.net/~text?txtsize=33&amp;txt=256&times;180&amp;w=256&amp;h=180&quot; alt=&quot;Card image cap&quot; /&gt;
+								        &lt;CardBody&gt;
+								          &lt;CardTitle&gt;Card title&lt;/CardTitle&gt;
+								          &lt;CardSubtitle&gt;Card subtitle&lt;/CardSubtitle&gt;
+								          &lt;CardText&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/CardText&gt;
+								          &lt;Button&gt;Button&lt;/Button&gt;
+								        &lt;/CardBody&gt;
+								      &lt;/Card&gt;
+								      &lt;Card&gt;
+								        &lt;CardImg top width=&quot;100%&quot; src=&quot;https://placeholdit.imgix.net/~text?txtsize=33&amp;txt=256&times;180&amp;w=256&amp;h=180&quot; alt=&quot;Card image cap&quot; /&gt;
+								      &lt;/Card&gt;
+								      &lt;Card&gt;
+								        &lt;CardBody&gt;
+								          &lt;CardTitle&gt;Card title&lt;/CardTitle&gt;
+								          &lt;CardSubtitle&gt;Card subtitle&lt;/CardSubtitle&gt;
+								          &lt;CardText&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/CardText&gt;
+								          &lt;Button&gt;Button&lt;/Button&gt;
+								        &lt;/CardBody&gt;
+								      &lt;/Card&gt;
+								      &lt;Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}&gt;
+								        &lt;CardTitle&gt;Special Title Treatment&lt;/CardTitle&gt;
+								        &lt;CardText&gt;With supporting text below as a natural lead-in to additional content.&lt;/CardText&gt;
+								        &lt;Button&gt;Button&lt;/Button&gt;
+								      &lt;/Card&gt;
+								      &lt;Card&gt;
+								        &lt;CardImg top width=&quot;100%&quot; src=&quot;https://placeholdit.imgix.net/~text?txtsize=33&amp;txt=256&times;180&amp;w=256&amp;h=180&quot; alt=&quot;Card image cap&quot; /&gt;
+								        &lt;CardBody&gt;
+								          &lt;CardTitle&gt;Card title&lt;/CardTitle&gt;
+								          &lt;CardSubtitle&gt;Card subtitle&lt;/CardSubtitle&gt;
+								          &lt;CardText&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.&lt;/CardText&gt;
+								          &lt;Button&gt;Button&lt;/Button&gt;
+								        &lt;/CardBody&gt;
+								      &lt;/Card&gt;
+								      &lt;Card body inverse color=&quot;primary&quot;&gt;
+								        &lt;CardTitle&gt;Special Title Treatment&lt;/CardTitle&gt;
+								        &lt;CardText&gt;With supporting text below as a natural lead-in to additional content.&lt;/CardText&gt;
+								        &lt;Button color=&quot;secondary&quot;&gt;Button&lt;/Button&gt;
+								      &lt;/Card&gt;
+								    &lt;/CardColumns&gt;
+					            </pre>
+									<div class="card-base">
+										<img src="images/card-masonry.png" alt="alert demo" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 left-align">
+								<div id="cards">
+									<h4>
+										<b>cards</b>
+									</h4>
+									<p>A card is a sheet of material that serves as an entry point to more detailed information.</p>
+									<pre class="brush: html">
+								  &lt;Card&gt;
+							        &lt;CardImg top width=&quot;100%&quot; src=&quot;https://placeholdit.imgix.net/~text?txtsize=33&amp;txt=318&times;180&amp;w=318&amp;h=180&quot; alt=&quot;Card image cap&quot; /&gt;
+							        &lt;CardBody&gt;
+							          &lt;CardTitle&gt;Card title&lt;/CardTitle&gt;
+							          &lt;CardSubtitle&gt;Card subtitle&lt;/CardSubtitle&gt;
+							          &lt;CardText&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/CardText&gt;
+							          &lt;Button&gt;Button&lt;/Button&gt;
+							        &lt;/CardBody&gt;
+							      &lt;/Card&gt;
+					        </pre>
+									<div class="card-base">
+										<img src="images/card.png" alt="alert demo" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 left-align">
+								<div id="chip">
+									<h4>
+										<b>chip</b>
+									</h4>
+									<p>Chips represent complex entities in small blocks, such as a contact.</p>
+									<p>While included here as a standalone component, the most common use will be in some form of input, so some of the
+										behaviour demonstrated here is not shown in context.</p>
+									<pre class="brush: html">
+										&lt;Chip label=&quot;Basic Chip&quot; className={classes.chip}&gt;&lt;/chip&gt;
+		 								 &lt;Chip
+		 									 avatar={&lt;Avatar&gt;MB&lt;/Avatar&gt;}
+		 									 label=&quot;Clickable Chip&quot;
+		 									 onClick={handleClick}
+		 									 className={classes.chip}&gt;
+		 								 &lt;/Chip&gt;
+		 								 &lt;Chip
+		 									 avatar={&lt;Avatar src=&quot;/static/images/uxceo-128.jpg&quot; /&gt;}
+		 									 label=&quot;Deletable Chip&quot;
+		 									 onDelete={handleDelete}
+		 									 className={classes.chip}&gt;
+		 								 &lt;/Chip&gt;
+									</pre>
+									<div class="card-base">
+										<img src="images/chip.png" alt="alert demo" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 left-align">
+								<div id="dialogs">
+									<h4>
+										<b>dialogs</b>
+									</h4>
+									<p>Dialogs inform users about a specific task and may contain critical information, require decisions, or involve multiple
+										tasks.
+									</P>
+									<p>Dialogs contain text and UI controls. They retain focus until dismissed or a required action has been taken. Use
+										dialogs sparingly because they are interruptive.</p>
+									<pre class="brush: html">
+						    &lt;Button raised=&quot;true&quot; onClick={() =&gt; this.handleClickOpen()} className=&quot;btn-primary text-white&quot;&gt;Open alert dialog&lt;/Button&gt;
+			                &lt;Dialog open={this.state.open} onClose={() =&gt; this.handleClose()} aria-labelledby=&quot;alert-dialog-title&quot; aria-describedby=&quot;alert-dialog-description&quot;&gt;
+			                    &lt;DialogTitle id=&quot;alert-dialog-title&quot;&gt;{&quot;Use Google's location service?&quot;}&lt;/DialogTitle&gt;
+			                    &lt;DialogContent&gt;
+			                        &lt;DialogContentText id=&quot;alert-dialog-description&quot;&gt;
+			                            Let Google help apps determine location. This means sending anonymous location data to
+			                            Google, even when no apps are running.
+			                            &lt;/DialogContentText&gt;
+			                    &lt;/DialogContent&gt;
+			                    &lt;DialogActions&gt;
+			                        &lt;Button raised=&quot;true&quot; onClick={() =&gt; this.handleClose()} className=&quot;btn-danger text-white&quot;&gt; Disagree &lt;/Button&gt;
+			                        &lt;Button raised=&quot;true&quot; onClick={() =&gt; this.handleClose()} className=&quot;btn-primary text-white&quot; autoFocus&gt; Agree &lt;/Button&gt;
+			                    &lt;/DialogActions&gt;
+			                &lt;/Dialog&gt;
+					        </pre>
+									<div class="card-base">
+										<img src="images/dialogues.png" alt="alert demo" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 left-align">
+								<div id="divider">
+									<h4>
+										<b>Divider</b>
+									</h4>
+									<p>Dividers group and separate content within lists and page layouts. The divider is a thin rule, lightweight yet sufficient
+										to distinguish content visually and spatially.</p>
+									<pre class="brush: html">
+								  &lt;List component=&quot;nav&quot;&gt;
+							        &lt;ListItem button&gt;
+							          &lt;ListItemText primary=&quot;Inbox&quot; /&gt;
+							        &lt;/ListItem&gt;
+							        &lt;Divider /&gt;
+							        &lt;ListItem button divider&gt;
+							          &lt;ListItemText primary=&quot;Drafts&quot; /&gt;
+							        &lt;/ListItem&gt;
+							        &lt;ListItem button&gt;
+							          &lt;ListItemText primary=&quot;Trash&quot; /&gt;
+							        &lt;/ListItem&gt;
+							        &lt;Divider light /&gt;
+							        &lt;ListItem button&gt;
+							          &lt;ListItemText primary=&quot;Spam&quot; /&gt;
+							        &lt;/ListItem&gt;
+							      &lt;/List&gt;
+					        </pre>
+									<div class="card-base">
+										<img src="images/divider.png" alt="alert demo" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 left-align">
+								<div id="Drawers">
+									<h4>
+										<b>Drawers</b>
+									</h4>
+									<p>The
+										<code>Drawer</code> slides in from the side. It is a common pattern found in Google apps and follows the keylines and metrics for
+										lists.
+									</p>
+									<pre class="brush: html">
+										&lt;Button onClick={this.toggleDrawer('left', true)}&gt;Open Left&lt;/Button&gt;
+										&lt;Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}&gt;
+											&lt;div
+												tabIndex={0}
+												role=&quot;button&quot;
+												onClick={this.toggleDrawer('left', false)}
+												onKeyDown={this.toggleDrawer('left', false)}&gt;
+												{sideList}
+											&lt;/div&gt;
+										&lt;/Drawer&gt;
+					        </pre>
+									<div class="card-base">
+										<img src="images/drawer.png" alt="alert demo" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 left-align">
+								<div id="expansionPanel">
+									<h4>
+										<b>expansionPanel</b>
+									</h4>
+									<p>
+										<code>ExpansionPanel</code> contain creation flows and allow lightweight editing of an element.</p>
+									<pre class="brush: html">
+									  &lt;ExpansionPanel&gt;
+								        &lt;ExpansionPanelSummary expandIcon={&lt;ExpandMoreIcon /&gt;}&gt;
+								          &lt;Typography className={classes.heading}&gt;Expansion Panel 1&lt;/Typography&gt;
+								        &lt;/ExpansionPanelSummary&gt;
+								        &lt;ExpansionPanelDetails&gt;
+								          &lt;Typography&gt;
+								            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+								            sit amet blandit leo lobortis eget.
+								          &lt;/Typography&gt;
+								        &lt;/ExpansionPanelDetails&gt;
+								      &lt;/ExpansionPanel&gt;
+								      &lt;ExpansionPanel&gt;
+								        &lt;ExpansionPanelSummary expandIcon={&lt;ExpandMoreIcon /&gt;}&gt;
+								          &lt;Typography className={classes.heading}&gt;Expansion Panel 2&lt;/Typography&gt;
+								        &lt;/ExpansionPanelSummary&gt;
+								        &lt;ExpansionPanelDetails&gt;
+								          &lt;Typography&gt;
+								            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+								            sit amet blandit leo lobortis eget.
+								          &lt;/Typography&gt;
+								        &lt;/ExpansionPanelDetails&gt;
+								      &lt;/ExpansionPanel&gt;
+								      &lt;ExpansionPanel disabled&gt;
+								        &lt;ExpansionPanelSummary expandIcon={&lt;ExpandMoreIcon /&gt;}&gt;
+								          &lt;Typography className={classes.heading}&gt;Disabled Expansion Panel&lt;/Typography&gt;
+								        &lt;/ExpansionPanelSummary&gt;
+								      &lt;/ExpansionPanel&gt;
+					               </pre>
+									<div class="card-base">
+										<img src="images/panel.png" alt="alert demo" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 left-align">
+								<div id="gridList">
+									<h4>
+										<b>gridList</b>
+									</h4>
+									<p>Grid lists are an alternative to standard list views. A grid list consists of a repeated pattern of cells arrayed
+										in a vertical and horizontal layout.</p>
+									<p>Grid lists are best used on similar data types. They help improve the visual comprehension of the content they contain.</p>
+									<pre class="brush: html">
+									  &lt;GridList cellHeight={160} className={classes.gridList} cols={3}&gt;
+	 							        {tileData.map(tile =&gt; (
+	 							          &lt;GridListTile key={tile.img} cols={tile.cols || 1}&gt;
+	 							            &lt;img src={tile.img} alt={tile.title} /&gt;
+	 							          &lt;/GridListTile&gt;
+	 							        ))}
+	 							      &lt;/GridList&gt;
+					               </pre>
+									<div class="card-base">
+										<img src="images/grid.png" alt="alert demo" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 left-align">
+								<div id="list">
+									<h4>
+										<b>list</b>
+									</h4>
+									<p>Lists present multiple line items vertically as a single continuous element.</p>
+									<p>Lists are made up of a continuous column of rows. Each row contains a tile. Primary actions fill the tile, and supplemental
+										actions are represented by icons and text.</p>
+									<pre class="brush: html">
+									  &lt;List component=&quot;nav&quot;&gt;
+								        &lt;ListItem button&gt;
+								          &lt;ListItemIcon&gt;
+								            &lt;InboxIcon /&gt;
+								          &lt;/ListItemIcon&gt;
+								          &lt;ListItemText primary=&quot;Inbox&quot; /&gt;
+								        &lt;/ListItem&gt;
+								        &lt;ListItem button&gt;
+								          &lt;ListItemIcon&gt;
+								            &lt;DraftsIcon /&gt;
+								          &lt;/ListItemIcon&gt;
+								          &lt;ListItemText primary=&quot;Drafts&quot; /&gt;
+								        &lt;/ListItem&gt;
+								      &lt;/List&gt;
+								      &lt;List component=&quot;nav&quot;&gt;
+								        &lt;ListItem button&gt;
+								          &lt;ListItemText primary=&quot;Trash&quot; /&gt;
+								        &lt;/ListItem&gt;
+								        &lt;ListItem button component=&quot;a&quot; href=&quot;#simple-list&quot;&gt;
+								          &lt;ListItemText primary=&quot;Spam&quot; /&gt;
+								        &lt;/ListItem&gt;
+								      &lt;/List&gt;
+					               </pre>
+									<div class="card-base">
+										<img src="images/list.png" alt="alert demo" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 left-align">
+								<div id="menu">
+									<h4>
+										<b>menu</b>
+									</h4>
+									<p>Menus display a list of choices on a transient sheet of material.</p>
+									<p>Menus appear upon interaction with a button, action, or other control. They display a list of choices, with one
+										choice per line.</p>
+									<p>Menu items may be disabled if not applicable to a certain context. Contextual menus dynamically change their available
+										menu items based on the current state of the app.</p>
+									<p>Menus should not be used as a primary method for navigation within an app.</p>
+									<pre class="brush: html">
+										&lt;Button
+								          aria-owns={anchorEl ? 'simple-menu' : null}
+								          aria-haspopup=&quot;true&quot;
+								          onClick={this.handleClick}&gt;
+								          Open Menu
+								        &lt;/Button&gt;
+										&lt;Menu
+								          id=&quot;simple-menu&quot;
+								          anchorEl={anchorEl}
+								          open={Boolean(anchorEl)}
+								          onClose={this.handleClose}&gt;
+								          &lt;MenuItem onClick={this.handleClose}&gt;Profile&lt;/MenuItem&gt;
+								          &lt;MenuItem onClick={this.handleClose}&gt;My account&lt;/MenuItem&gt;
+								          &lt;MenuItem onClick={this.handleClose}&gt;Logout&lt;/MenuItem&gt;
+								        &lt;/Menu&gt;
+					               </pre>
+									<div class="card-base">
+										<img src="images/menu.png" alt="alert demo" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 left-align">
+								<div id="popovers">
+									<h4>
+										<b>popovers</b>
+									</h4>
+									<p>Popovers are built with
+										<a href="https://popper.js.org/">https://popper.js.org/</a> via
+										<a href="https://github.com/souporserious/react-popper">https://github.com/souporserious/react-popper</a>.
+									</p>
+									<pre class="brush: html">
+										&lt;Button id=&quot;Popover1&quot; onClick={this.toggle}&gt;
+								          Launch Popover
+								        &lt;/Button&gt;
+								        &lt;Popover placement=&quot;bottom&quot; isOpen={this.state.popoverOpen} target=&quot;Popover1&quot; toggle={this.toggle}&gt;
+								          &lt;PopoverHeader&gt;Popover Title&lt;/PopoverHeader&gt;
+								          &lt;PopoverBody&gt;Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.&lt;/PopoverBody&gt;
+								        &lt;/Popover&gt;
+					               </pre>
+									<div class="card-base">
+										<img src="images/popover.png" alt="alert demo" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 left-align">
+								<div id="progress">
+									<h4>
+										<b>progress</b>
+									</h4>
+									<p>Progress and activity indicators are visual indications of an app loading content.</p>
+									<p>A single visual indicator should be used to represent each type of operation. For example, a refresh operation should
+										display either a refresh bar or an activity circle, but not both.</p>
+									<p>Determinate indicators display how long an operation will take.</p>
+									<p>Indeterminate indicators visualize an unspecified wait time.</p>
+									<pre class="brush: html">
+				  &lt;CircularProgress className={classes.progress} /&gt;
+			      &lt;CircularProgress className={classes.progress} size={50} /&gt;
+			      &lt;CircularProgress className={classes.progress} color=&quot;secondary&quot; /&gt;
+			      &lt;CircularProgress className={classes.progress} style={{ color: purple[500] }} thickness={7} /&gt;
+					        </pre>
+									<div class="card-base">
+										<img src="images/progress-bar.png" alt="alert demo" />
+									</div>
+									<div class="card-base">
+										<img src="images/progress.png" alt="alert demo" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 left-align">
+								<div id="selectionControls">
+									<h4>
+										<b>selectionControls</b>
+									</h4>
+									<p>Selection controls allow the user to select options.</p>
+									<p>Three types of selection controls are covered in this guidance:</p>
+									<ol>
+										<li>Checkboxes allow the selection of multiple options from a set.</li>
+										<li>Radio Buttons allow the selection of a single option from a set.</li>
+										<li>Switches allow a selection to be turned on or off.</li>
+									</ol>
+									<pre class="brush: html">
+								// Checkbox
+									&lt;Checkbox
+						          checked={this.state.checkedA}
+						          onChange={this.handleChange('checkedA')}
+						          value=&quot;checkedA&quot;
+						        /&gt;
+
+								// Radio
+									&lt;FormControl component=&quot;fieldset&quot; required className={classes.formControl}&gt;
+						          &lt;FormLabel component=&quot;legend&quot;&gt;Gender&lt;/FormLabel&gt;
+						          &lt;RadioGroup
+						            aria-label=&quot;gender&quot;
+						            name=&quot;gender1&quot;
+						            className={classes.group}
+						            value={this.state.value}
+						            onChange={this.handleChange}
+						          &gt;
+						            &lt;FormControlLabel value=&quot;female&quot; control={&lt;Radio /&gt;} label=&quot;Female&quot; /&gt;
+						            &lt;FormControlLabel value=&quot;male&quot; control={&lt;Radio /&gt;} label=&quot;Male&quot; /&gt;
+						            &lt;FormControlLabel value=&quot;other&quot; control={&lt;Radio /&gt;} label=&quot;Other&quot; /&gt;
+						            &lt;FormControlLabel
+						              value=&quot;disabled&quot;
+						              disabled
+						              control={&lt;Radio /&gt;}
+						              label=&quot;(Disabled option)&quot;
+						            /&gt;
+						          &lt;/RadioGroup&gt;
+						        &lt;/FormControl&gt;
+
+								// Switch
+									&lt;Switch
+						          checked={this.state.checkedA}
+						          onChange={this.handleChange('checkedA')}
+						          value=&quot;checkedA&quot;
+						        /&gt;
+						        &lt;Switch
+						          checked={this.state.checkedB}
+						          onChange={this.handleChange('checkedB')}
+						          value=&quot;checkedB&quot;
+						          color=&quot;primary&quot;
+						        /&gt;
+						        &lt;Switch value=&quot;checkedC&quot; /&gt;
+						        &lt;Switch disabled value=&quot;checkedD&quot; /&gt;
+						        &lt;Switch disabled checked value=&quot;checkedE&quot; /&gt;
+						        &lt;Switch defaultChecked value=&quot;checkedF&quot; color=&quot;default&quot; /&gt;
+					        </pre>
+									<div class="card-base">
+										<img src="images/checkbox.png" alt="alert demo" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 left-align">
+								<div id="snackbar">
+									<h4>
+										<b>snackbar</b>
+									</h4>
+									<p>Snackbars provide brief feedback about an operation through a message - typically at the bottom of the screen.</p>
+									<p>Snackbars contain a single line of text directly related to the operation performed. They may contain a text action,
+										but no icons.</p>
+									<p>Only one snackbar may be displayed at a time.</p>
+									<pre class="brush: html">
+								&lt;Button onClick={this.handleClick}&gt;Open simple snackbar&lt;/Button&gt;
+						        &lt;Snackbar
+					          anchorOrigin={{
+					            vertical: 'bottom',
+					            horizontal: 'left',
+					          }}
+					          open={this.state.open}
+					          autoHideDuration={6000}
+					          onClose={this.handleClose}
+					          SnackbarContentProps={{
+					            'aria-describedby': 'message-id',
+					          }}
+					          message={&lt;span id=&quot;message-id&quot;&gt;Note archived&lt;/span&gt;}
+					          action={[
+					            &lt;Button key=&quot;undo&quot; color=&quot;secondary&quot; size=&quot;small&quot; onClick={this.handleClose}&gt;
+					              UNDO
+					            &lt;/Button&gt;,
+					            &lt;IconButton
+					              key=&quot;close&quot;
+					              aria-label=&quot;Close&quot;
+					              color=&quot;inherit&quot;
+					              className={classes.close}
+					              onClick={this.handleClose}
+					            &gt;
+					              &lt;CloseIcon /&gt;
+					            &lt;/IconButton&gt;
+					               </pre>
+									<div class="card-base">
+										<img src="images/snackbar.png" alt="alert demo" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section" id="faqs">
+						<div class="row">
+							<div class="col-md-12 left-align">
+								<h2 class="dark-text">Faqs (Frequently Asked Questions)</h2>
+							</div>
+							<div class="col-md-12">
+								<h4>How to build an app from scratch?</h4>
+								<p>You can easily build your app from scratch just follow these steps :-</p>
+								<ol>
+									<li>Copy the seed project from downloaded themeforest files.</li>
+									<li>Open terminal and go to the seed directory and then run
+										<code>npm install</code>.</li>
+									<li>After installing npm then run
+										<code>npm start</code>.</li>
+									<li>Open your browser and access
+										<code>http://localhost:3000</code>
+									</li>
+								</ol>
+								<p>By default seed project contains dashboard page means you can easily build your dashboard.</p>
+								<p class="text-muted">If you want to integrate Todo List in you dashboard then you need to follow these steps:-</p>
+								<ol>
+									<li>Open
+										<code>src/routes/dashboard/index.js</code></code>
+									</li>
+									<li>Copy TodoList widget from
+										<code>reactify/src/components/Widgets/TodoList.js</code> themeforest downloded file and paste it into under the
+										<code>your-project-directory-name/src/components/Widgets/</code> directory.
+									</li>
+									<li>Import TodoList widget from
+										<code>src/components/TodoList.js</code>
+										<pre class="brush: html">
+											/**
+											 * Dashboard Page
+											 */ 
+											import React, { Component } from 'react';
+											import { TodoList } from 'Components/Widgets';
+
+											// page title bar
+											import PageTitleBar from 'Components/PageTitleBar/PageTitleBar';
+
+											// localize messages
+											import IntlMessages from 'Util/IntlMessages';
+
+											// collapsible card component use if you want to make todo list collapsible
+											import RctCollapsibleCard from 'Components/RctCollapsibleCard/RctCollapsibleCard';
+
+											class Dashboard extends Component {
+												render() {
+													return (
+														 &lt;div className="dashboard-wrapper"&gt;
+															&lt;PageTitleBar title={&lt;IntlMessages id="sidebar.dashboard" /&gt;} match={this.props.match} /&gt;
+															&lt;div className="row"&gt;
+																 &lt;RctCollapsibleCard
+																	 customClasses="to-do-list" 
+																	 colClasses="col-sm-6 col-md-4 col-lg-4 d-xs-half-block d-xxs-full"
+																	 collapsible
+																	 reloadable
+																	 closeable
+																	 fullBlock
+																 &gt;
+																	&lt;ToDoListWidget /&gt;
+																 &lt;/RctCollapsibleCard&gt;
+															&lt;/div&gt;
+														 &lt;/div&gt;
+													);
+												}
+											}
+
+											export default Dashboard;
+										</pre>
+									</li>
+									<li>Save the file and open your browser you will see your dashboard is ready.</li>
+								</ol>
+								<p class="text-muted">If you want to integrate User Mangement page in your app then you need to follow these steps:-</p>
+								<ol>
+									<li>Copy the user management page from
+										<code>reactify/src/routes/users/user-management</code>downloaded themeforest files and paste it into under the
+										<code>your-app-directory/src/routes/</code> directory.</li>
+									<li>Now you need to define the route in the
+										<code>your-app-directory/src/routes/index.js</code> file.
+										<pre class="brush: html">
+											/**
+											 * App Routes
+											 */ 
+											import React, { Component } from 'react';
+											import { Route, withRouter } from 'react-router-dom';
+											import { connect } from 'react-redux';
+
+											// app default layout
+											import RctAppLayout from 'Components/RctAppLayout';
+
+											// async components
+											import { 
+												 AsyncDashboardComponent, 
+												 AsyncUserManagementComponent
+											} from 'Components/AsyncComponent/AsyncComponent';
+
+											class MainApp extends Component {
+												render() {
+													const { match } = this.props;
+													return (
+														&lt;RctAppLayout&gt;
+															 &lt;Route path={`${match.url}/dashboard`} component={AsyncDashboardComponent} /&gt;
+															 &lt;Route path={`${match.url}/user-management`} component={AsyncUserManagementComponent} /&gt;
+														&lt;/RctAppLayout&gt;
+													);
+												}
+											}
+
+											export default withRouter(connect(null)(MainApp));
+										</pre>
+									</li>
+									<li>
+										Now you need to define your component as asynchronous in the
+										<code>your-app-directory/src/components/AsyncComponent/AsyncComponent.js</code> file.
+										<pre class="brush: html">
+										/**
+										* AsyncComponent
+										* Code Splitting Component / Server Side Rendering
+										*/ 
+										import React from 'react';
+										import Loadable from 'react-loadable';
+
+										// rct page loader
+										import RctPageLoader from 'Components/RctPageLoader/RctPageLoader';
+
+										// dashboard
+										const AsyncDashboardComponent = Loadable({
+											loader: () => import("Routes/dashboard"),
+											loading: () => &lt;RctPageLoader /&gt;,
+										});
+
+										// user management
+										const AsyncUserManagementComponent = Loadable({
+											loader: () => import("Routes/user-management"),
+											loading: () => &lt;RctPageLoader /&gt;,
+										});
+
+										export {
+											AsyncDashboardComponent,
+											AsyncUserManagementComponent
+										}
+										</pre>
+									</li>
+									<li>That’s it if you navigate
+										<code>http://localhost:3000/app/user-management/</code> The page has been build successfully.
+									</li>
+								</ol>
+								<p class="text-muted">If you want to add new menu in sidebar follow these steps:-</p>
+								<ol>
+									<li>Open
+										<code>your-app-directory/src/components/Sidebar/NavLinks.js</code> file.</li>
+									<li> Add new object in category1 e.g.,
+										<pre class="brush: html">
+										// sidebar nav links
+										export default {
+											category1: [
+												{
+													"menu_title": "sidebar.dashboard",
+													"menu_icon": "ti-dashboard",
+													"path": "/app/dashboard",
+													"child_routes": null
+												},
+												{
+													"menu_title": "sidebar.userManagement",
+													"menu_icon": "ti-user",
+													"path": "/app/user-management",
+													"child_routes": null
+												}
+											]
+										}
+									</pre>
+									</li>
+								</ol>
+							</div>
+							<div class="col-md-12">
+								<h4>How to integrate reactify components in existing app?</h4>
+								<p>By following these steps you can easily use reactify components in your existing app.</p>
+								<ol>
+									<li>First of all you need to check your app dependencies and also you need to install all reactify dependencies in package.json</li>
+									<li>
+										<div class="alert alert-warning">
+											<strong>Note:</strong> By following this step your existing styles may be overide. You need to follow this step carefully.
+										</div>
+										Copy the styles from
+										<code>reactify/src/assets/scss</code> and paste where your app style is exist.</li>
+									<li>
+										If you want to use reactify components see faq
+										<strong>How to build an app from scratch?</strong> skip the five lines and start building your app.
+									</li>
+								</ol>
+							</div>
+							<div class="col-md-12">
+								<h4>How to integrate Api's in reactify?</h4>
+								<p>Reactify comes with Api's ready means you can easily integrate api's and connect with the backend server as well.
+									Follow these steps to integrate api's:-</p>
+								<ol>
+									<li>
+										<p>Change your backend base url under the
+											<code>reactify/src/api/index.js</code> file.
+										</p>
+										<img src="./images/api.png" width="800" alt="app config" />
+									</li>
+									<li>
+										<p>Here is an example for integrate api's. Open
+											<code>reactify/src/components/Widgets/TodoList.js</code> file.</p>
+										<img src="./images/http-request.png" width="800" alt="http-request" />
+									</li>
+								</ol>
+							</div>
+							<div class="col-md-12">
+								<h4>How to use your own data?</h4>
+								<p>You can use your own data easily. Follow these steps to use your own data.</p>
+								<ol>
+									<li>
+										<p>Open that component in which you want to use your own data. e.g. we have taken a todo list component example in
+											this case.</p>
+									</li>
+									<li>
+										<p>Here we are getting data from backend on
+											<code>componentWillMount() {}</code> method.</p>
+										<img src="./images/http-request.png" width="800" alt="http-request" />
+									</li>
+									<li>
+										<p>You may change here your own api url e.g.,</p>
+										<pre class="brush: html">
+										...
+										...
+										componentWillMount() {
+											this.getTodo();
+										}
+
+										getTodo() {
+											this.setState({ sectionReload: true });
+											axios.get('https://jsonplaceholder.typicode.com/todos') // your api url will be here
+											.then((response) => {
+												this.setState({ todoListData: response.data, sectionReload: false });
+											})
+											.catch(error => {
+												console.log(error);
+												this.setState({ sectionReload: false })
+											})
+										}
+										</pre>
+									</li>
+								</ol>
+								<p>Some components data are defined in
+									<code>data.js</code> e.g. in
+									<code>src/routes/dashboard/dashboard-v1/data.js</code> file there are some components data are declared you may also change their data from this file.
+								</p>
+							</div>
+							<div class="col-md-12">
+								<h4>How to change the color on the template ?</h4>
+								<p>Here are step by step instructions to change the color on the template</p>
+								<p>
+									<b>Case1: Change Primary Color</b>
+								</p>
+								<p>In order to change the primary color you need to following steps:</p>
+								<ol>
+									<li>Go to
+										<code>AppConfig</code> file and then to themecolors, simply change the primary value as per your requirment.</li>
+									<li>
+										<p>Go to
+											<code>src/assets/scss/_bootstrap-override.scss</code> here you can change the value of ($blue: #722ED1 !default; //Manage Primary color variable.)
+										</p>
+										<img src="./images/theme-color.png" width="800" alt="theme-color" />
+									</li>
+								</ol>
+								<p>Following the above two steps the primary color should be changed to your desired color.</p>
+								<p>
+									<b>Case2: Change Theme Color</b>
+								</p>
+								<p>Reactify comes with 6 predefined themes that you can use, you can also see them in action from demo under themeoption
+									on right hand side. Incase you want any one of them, then you simply need to change the class on body to your desired
+									class for e.g 'theme-primary', 'theme-warning', 'theme-danger' etc. Incase you want to give your own custom class
+									then you can go to container -> themes and create your own file. You can follow the same structure as other files
+									present there. In addition to this you need go to
+									<code>src/assets/scss/custom/themes</code> and create the necessary sass file.
+								</p>
+							</div>
+						</div>
+					</section>
+				</div>
+				<!-- // end .col -->
+			</div>
+			<!-- // end .row -->
+		</div>
+		<!-- // end container -->
+	</div>
+	<!-- end wrapper -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/retina.js"></script>
+	<script src="js/jquery.fitvids.js"></script>
+	<script src="js/wow.js"></script>
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/jquery.scrollbar.js"></script>
+	<!-- CUSTOM PLUGINS -->
+	<script src="js/custom.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/syntax-highlighter/scripts/shCore.js"></script>
+	<script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
+	<script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
+	<script src="js/syntax-highlighter/scripts/shBrushJScript.js"></script>
+</body>
+
+</html>

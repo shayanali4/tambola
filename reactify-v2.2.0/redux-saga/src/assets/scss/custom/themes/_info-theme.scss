@@ -1,0 +1,153 @@
+/*====== Info Theme ======*/
+body.theme-info.dark-mode
+{
+  .rct-block-title
+  {
+    background-image: linear-gradient(25deg, $info 0%, #009FFF 85%);
+    border-radius: 5px 5px 0px 0px;
+  }
+}
+
+
+body.theme-info {
+
+
+  .RRT__tab{
+    background: $info !important;
+    color: $white;
+  }
+  .RRT__tab--selected{
+    background: $light-info !important;
+  }
+
+
+
+   .text-primary,
+   .dropdown-foot a,
+   .faq-page-wrapper .panel-heading h4 {
+      color: $info !important;
+   }
+
+   .ReactTable
+   {
+     a,.rt-thead .rt-tr,
+     .-pagination select,  .-pagination .-center, .-pagination input
+     {
+       color: $info;
+     }
+     .-pagination .-btn,
+     {
+       color : $info;
+     }
+     .-pagination .-btn:not([disabled]):hover
+     {
+       background : $info;
+       opacity: 0.8
+     }
+    }
+
+
+
+        .btn-outline-default {
+        @include border(1px solid, $info, top bottom left right);
+        color: $info;
+        }
+
+
+   .rct-dropdown .dropdown-menu .rct-scroll ul li a:hover,
+   .humburger,
+   .search-icon::before,
+   .Select-placeholder,
+   .Select-arrow-zone,
+   .header-icon,
+   .navbar-right > li > a > button,
+   .navbar-right > li > button,
+   .dropdown-group-link,
+   .search-icon-btn {
+      color: $white !important;
+   }
+
+   .badge-primary,
+   .bg-primary,
+   .btn-primary,{
+      *{
+         color: $white !important;
+      }
+   }
+
+   .app-header .rct-header,
+   {
+     background-image: linear-gradient(25deg, $info 0%, #009FFF 85%);
+   }
+
+   .badge-primary,
+   .bg-primary,
+   .chat-body .chat-bubble.odd,
+   .rct-dropdown .dropdown-menu ul li a:hover,
+   .fixed-plugin,
+   header .dropdown-group-link,
+   figure.img-wrapper::after,
+   .rct-sidebar .site-logo,
+   {
+  background: $info!important;
+   }
+   .btn-primary,
+   .rct-dropdown .dropdown-group-link,
+   .feed-content,
+   .rbc-event {
+      border-color: $info !important;
+   }
+   .rbc-event {
+      color: $info;
+   }
+   .quicklink-wrapper .dropdown-menu:after,
+   .quicklink-wrapper .dropdown-menu:before,
+   .sidebar-user-block .rct-dropdown.show .dropdown-menu:before,
+   .sidebar-user-block .rct-dropdown.show .dropdown-menu:after{
+      border-bottom-color:$info !important;
+   }
+
+   .header-icon:hover,
+   .header-icon:focus{
+      border-color: $white !important;
+   }
+
+   //Color Switching
+
+   .text-info {
+      color: $primary !important;
+   }
+   .badge-info,.bg-info{
+      background: $primary !important;
+   }
+   .btn-info {
+      border-color: $primary !important;
+   }
+
+   .linked-2,.linked-7, .linked-12, .linked-17
+   {
+     border-right: 12px $primary solid;
+   }
+   .timer-stroke-color
+   {
+     stroke : $info;
+   }
+   .timer-bg-color
+   {
+    fill : $info;
+   }
+   .timer-text-color
+   {
+    fill : $info;
+   }
+   .bg-grdnt-violet  {
+     background-image: linear-gradient(85deg, $info 0%, #009FFF 180%) ;
+
+   }
+
+   .btn-info
+   {
+     background-image: linear-gradient(25deg, #b65eba 0%, $primary  95%) ;
+   }
+
+}

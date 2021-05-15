@@ -1,0 +1,10 @@
+{
+   "extends": "react-app",
+   "env" : {
+            "browser": true,
+            "node": true
+          },
+   "rules": {
+      "react/no-deprecated": 0
+   }
+}
